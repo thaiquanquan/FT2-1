@@ -1,0 +1,166 @@
+:root {
+    --color-primary: #4788E9;
+    --color-dark: #191847;
+    --color-success: #4caf50;
+    --color-bg-body: #e5e5e5;
+    --color-white: #ffffff;
+    --color-border: #ddd;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-bg-body);
+}
+
+/* Container */
+.product {
+    width: 887px;
+    height: 661px;
+    padding: 82px;
+    display: flex;
+    gap: 3.2rem;
+    background: var(--color-white);
+}
+
+/* Image */
+.product .image {
+    width: 223px;
+    height: 249px;
+    flex-shrink: 0;
+}
+
+/* Content */
+.product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3.2rem;
+    height: 100%;
+}
+
+/* Shipping */
+.shipping {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.shipping p {
+    width: 112px;
+    height: 29px;
+    background: var(--color-dark);
+    font-size: 1.4rem;
+    color: var(--color-white);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shipping h2 {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+/* Price  */
+.product-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-price .new-price {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product-price .old-price {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.product-price .offer-text {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+/* Button primary */
+.btn-primary {
+    width: 442px;
+    height: 59px;
+    background: var(--color-primary);
+    font-size: 1.8rem;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 8px rgba(28, 87, 238, 1);
+    border-radius: 8px;
+
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Stock */
+.stock {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+}
+
+.stock .point {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--color-success);
+    border-radius: 50%;
+}
+
+/* Button group */
+.btn-group {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.btn-secondary,
+.btn-wishlist {
+    width: 213px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    border: 1px solid #c9c9da;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover,
+.btn-wishlist:hover {
+    opacity: 0.9;
+}
+
+/* Icon */
+.icon {
+    width: 3.2rem;
+    height: 3.2rem;
+}
