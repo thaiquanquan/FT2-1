@@ -1,0 +1,122 @@
+:root {
+    --color-primary: #4788E9;
+    --color-dark: #191847;
+    --color-success: #4caf50;
+    --color-bg-body: #e5e5e5;
+    --color-white: #ffffff;
+    --color-border: #ddd;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+.login {
+    max-width: 32rem;    
+    height: 34.6rem; 
+    width: 100%; 
+}
+
+.login-header {
+    width: 100%;
+    margin-bottom: 2.4rem; 
+    text-align: center;
+    font-weight: 400;
+}
+
+.login-content {
+    display: flex;
+    gap: 2.4rem;       
+    flex-direction: column;
+    padding: 2.4rem;   
+    background: white;
+    border-radius: 0.8rem; 
+    box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; 
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.4rem; 
+    font-weight: 400;
+}
+
+.login-content input {
+    padding: 0.8rem;   
+    height: 3.2rem;    
+    width: 100%;
+    border-radius: 0.4rem; 
+    background: #d9d9d9;
+    border: 1px solid #eeeeee;
+}
+
+.login-content input::placeholder {
+    font-size: 1.4rem; 
+    font-weight: 400;
+}
+
+.login-content input:focus {
+    outline: none;
+    border: 0.1rem solid var(--color-primary);
+}
+
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-link {
+    font-size: 1.4rem; 
+    font-weight: 400;
+    color: #007aff;
+}
+
+.login-btn {
+    width: 100%;
+    height: 3.4rem; 
+    border-radius: 0.8rem; 
+    padding: 0.8rem; 
+    background: var(--color-primary);
+    font-size: 1.6rem; 
+    font-weight: 700;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #006edc;
+}
+
+.create-acc {
+    width: 100%;
+    font-size: 1.4rem; 
+    font-weight: 400;
+    text-align: center;
+}

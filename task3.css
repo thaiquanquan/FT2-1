@@ -1,0 +1,159 @@
+:root {
+    --color-primary: #4788E9;
+    --color-dark: #191847;
+    --color-success: #4caf50;
+    --color-bg-body: #f8f8f8;
+    --color-white: #ffffff;
+    --color-border: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    background: var(--color-bg-body);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 156.3rem;
+    padding: 6.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
+    border-radius: 2.6px;
+    background: #4caf50;
+    height: 77.7rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.content h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-dark);
+}
+
+.button-group {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.common-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.4rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    gap: 1rem;
+    background-color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--color-dark);
+    transition: 0.2s ease;
+}
+
+.common-btn:hover {
+    opacity: 0.9;
+}
+
+
+.btn-profile   { width: 7rem; }
+.btn-newyork   { width: 9.4rem; }
+.btn-relaxing  { width: 8.9rem; }
+.btn-person    { width: 7.5rem; }
+.btn-fashion   { width: 8.3rem; }
+
+
+.cards-wrapper {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.card {
+    width: 43.7rem;
+    padding: 2.4rem;
+    border-radius: 3.2rem;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    cursor: pointer;
+}
+
+
+.card .image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+
+.card .main-img {
+    width: 100%;
+    height: 26.8rem;
+    border-radius: 2.4rem;
+    object-fit: cover;
+}
+
+
+.card .thumbnail-group {
+    display: flex;
+    gap: 1.6rem;
+}
+
+
+.card .thumbnail-group img {
+    width: 11.9rem;
+    height: 9.7rem;
+    border-radius: 2.4rem;
+    object-fit: cover;
+}
+
+
+.card .text {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+}
+
+.card .count {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+.card .count .icon {
+    width: 2.067rem;
+    height: 2.067rem;
+    object-fit: contain;
+}
+
+.card .count p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--color-dark);
+}
